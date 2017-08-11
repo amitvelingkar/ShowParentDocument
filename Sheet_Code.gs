@@ -16,7 +16,7 @@ function listParentFolders() {
   if (folders && folders.hasNext()) {
     while (folders.hasNext()) {
       var folder = folders.next();
-      html += '<div><a href="'+folder.getUrl()+'">'+folder.getName()+'<div>';      
+      html += '<div><a href="'+folder.getUrl()+'" target="_blank">'+folder.getName()+'<div>';      
     }
   } else {
     html += "<p>No parent folder set.</p>";
