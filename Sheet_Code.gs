@@ -6,7 +6,6 @@ function onOpen() {
 }
 
 function listParentFolders() {
-
   var docId = SpreadsheetApp.getActiveSpreadsheet().getId();
   var file = DriveApp.getFileById(docId);
   var folders = file.getParents();
